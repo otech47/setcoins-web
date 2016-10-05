@@ -31,7 +31,6 @@ export default class FeelTheEconomy extends Base{
 								</a>	
 							</div>
 							<div className='app-container'>
-								<i className='fa app-icons clickable fa-apple'></i>	
 								<a href='https://play.google.com/store/apps/details?id=com.setmusic.setcoins&hl=en' >
 									<i className='fa app-icons clickable fa-android'></i>
 								</a>	
