@@ -19,7 +19,7 @@ export default class FeelTheEconomy extends Base{
 
 							</div>
 							<div className='video-container'>
-								<iframe id='video'  src="https://www.youtube.com/embed/VePpQBCbKBw" frameBorder="0" allowFullScreen>
+								<iframe id='video'  src="https://www.youtube.com/embed/tKPi2J3K1Jk" frameBorder="0" allowFullScreen>
 								</iframe>
 							</div>
 						</div>
