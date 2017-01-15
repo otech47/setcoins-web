@@ -12,5 +12,5 @@ app.get('/',function (req,res){
 
 var port = process.env.PORT || 80;
 app.listen(port,function(){
-	console.log('long live bitchange , running port '+ port);
+	console.log('long live bitchanges , running port '+ port);
 });
