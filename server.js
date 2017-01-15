@@ -7,7 +7,7 @@ var publicPath = path.resolve(__dirname, 'public');
 app.use(express.static(publicPath));
 
 app.get('/',function (req,res) {
-	res.sendFile(path.resolve(__dirname, 'public','index.html'));
+	res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 
 var port = process.env.PORT || 80;
