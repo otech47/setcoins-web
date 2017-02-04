@@ -6,8 +6,7 @@
   "scripts": {
     "start": "forever stopall; forever start server.js",
     "stop": "forever stopall",
-    "deploy": "webpack -p --config webpack.config.production.js",
-    "build": "NODE_ENV=production webpack  --progress --colors -p",
+    "deploy": "NODE_ENV=production webpack  --progress --colors -p",
     "test": "webpack-dev-server --progress --colors"
   },
   "repository": {
