@@ -18,8 +18,7 @@ export default class LandingHeader extends Base{
 			api.get('http://api.coindesk.com/v1/bpi/currentprice.json').then( res =>{
 				
 				var btcValue = res['bpi']['USD']['rate']
-				var btcValue = btcValue.slice(0,6)
-			
+				btcValue = btcValue.slice(0,btcValue.length - 2)
 
 				this.setState({
 					btcValue: btcValue
