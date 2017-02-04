@@ -6,11 +6,12 @@ var publicPath = path.resolve(__dirname, 'public');
 
 app.use(express.static(publicPath));
 
-app.get('/',function (req,res){
-	res.sendFile(path.resolve(__dirname, 'public','index.html'));
+app.get('/',function (req,res) {
+	res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 
 var port = process.env.PORT || 80;
-app.listen(port,function(){
-	console.log('long live bitchange , running port '+ port);
-});
+
+app.listen(port, function() {
+	console.log('setcoins-web.. , running port '+ port);
+}); 
