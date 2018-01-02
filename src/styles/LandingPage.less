@@ -1,115 +1,89 @@
-
-	#section0{
-		background-image: url('http://d1wbxby8dwa4u.cloudfront.net/namecheap/setcoinsBackground.png') ;
-		background-size: 100%;
-		padding: 0;
-		position: relative;
-		overflow: hidden; 
-	}
-	#landing-page{
-		font-family: Avenir Light;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
-	}
-	.economy-button{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	.root-container{
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
-		height: 800px;
-		width: 2000px;
-		margin-top: 10px;
-		margin-top: 80px;
-		
-	}
-	.economy-container{
-		width: 2000px;
-		height: 900px;
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		justify-content: space-around;
-		
-	}
-	.can-you-feel-it{
-		width: 1300px;
-		height: 400px;
-		color: #dadfe1;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-	}
-	#feel-the-new-economy{
-		font-size: 4vw;
-		color: #ffffff;
-	}
-	.free-btc{
-		margin-top: 10px;
-		p{
-			font-size: 2.5vw;
-			margin-bottom: 30px;
-		}
-	}
-	
-	#video{
-		width: 800px;
-		height: 450px; 
-	}
-	.buttons-container{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-		width: 100%;
-	}
-	.app-icons{
-		color: white;
-		font-size: 6vw;
-	}
-	.app-icons:hover{
-		color: #ffb701;
-	}
-	.app-container{
-		
-		width: 500px;
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-
-	}
-	.app-container .screen{
-		color: #ffb701;	
-	}
-	.app-container .screen:hover{
-		color: #1976d3;
-	}
-	.app-icons .screen{
-		cursor: pointer;
-	}
-	.app-icons.clickable {
-    	cursor: pointer;
-	}
-	
-
-	
-
-
-
-
-
-
-
-
-
-
-
+  .landingPage {
+        font-family: Avenir Light;
+        width: @windowWidth;
+        height: @windowHeight;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-image: url('https://i.imgur.com/CSKq2oL.png');
+        background-size: 100%;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        .body {
+            display: flex;
+            flex-direction: row;
+            height:100%;
+            .contentContainer {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                margin-left: @horizontalSpaceSmall;
+                color: white;
+                .bodyText {
+                    font-family: Avenir Light;
+                    font-weight: lighter;
+                    div {
+                        margin: @verticalSpaceSmall @verticalSpaceSmall @verticalSpaceSmall 0;
+                        line-height: @verticalSpaceSmall;
+                        font-size: 1.125em;
+                    }
+                }
+                .buttonRow {
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: @verticalSpaceSmall;
+                        a {
+                            text-decoration: none;
+                        }
+                        .button {
+                            color: white;
+                            width: @horizontalSpaceMedium*1.5;
+                            height: @verticalSpaceSmall*1.5;
+                            border-radius: 24px;
+                            text-align: center;
+                            vertical-align: middle;
+                            display: flex;
+                            /* Rectangle 2: */
+                            background-image: linear-gradient(-48deg, rgba(69,198,248,.67) 0%, rgba(33,148,239,.67) 100%);
+                            .buttonTitle {
+                                opacity: 1;
+                                color: white;
+                                font-size: 1.25em;
+                                text-align: center;
+                                display: flex;
+                                margin: auto;
+                            }
+                        }
+                        .button:hover {
+                            cursor: pointer;
+                        }
+                        .button:first-of-type {
+                            margin-right: @horizontalSpaceTiny;
+                        }
+                }
+                h1:first-of-type {
+                    margin: @verticalSpaceSmall 0 0 0;
+                }
+                h1:last-of-type {
+                    margin: 0 0 @verticalSpaceSmall 0;
+                }
+                h1 {
+                    font-weight:bolder;
+                }
+            }
+            .imgContainer {
+                display: flex;
+                flex: 1;
+                .imgBlock {
+                    margin: auto 0 auto auto;
+                    background-image: url('https://i.imgur.com/LD3BPDv.png');
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    height: @horizontalSpaceLarge*3;
+                    width: @horizontalSpaceLarge*3;
+                }
+            }
+        }
+    }

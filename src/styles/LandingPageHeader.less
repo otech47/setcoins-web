@@ -1,43 +1,30 @@
 //Landing Header CSS
-
-
-
-	.setcoins-logo{
-		width: 70px;
-		height: 70px;
-	}
-	.header{
-		width: 100%;
-		padding-top: 2%;
-		color: #dadfe1;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-
-	}
-	#setcoins-landing-header{
-		margin-left: 15px;
-		font-size: 3vw;
-		color: #ffffff;
-	}
-	#setmine-logo{
-		height: auto;
-		width: 2.5vw;
-		margin: 0;
-		color: #dadfe1 ;
-	}
-	.header-2{
-		width: 450px;
-		margin-left: 2%;
-		align-items: center;
-	}
-	#btc-value{
-		margin-right: 2%;
-		font-size: 2vw;
-	}
-	
-
-
-
-//End of landing Header CSS
+    .header{
+        width: @windowWidth;
+        height: @verticalSpaceSmall*4;
+        color: #dadfe1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .setcoins-logo{
+            width: @verticalSpaceMedium*1.5;
+            height: @verticalSpaceMedium*1.5;
+        }
+    }
+    #setcoins-landing-header{
+        margin-left: 15px;
+        font-size: 3vw;
+        color: #ffffff;
+    }
+    .header-2{
+        position: relative;
+        left: 0;
+        .flex;
+        margin-left: @horizontalSpaceSmall;
+        align-items: center;
+    }
+    #btc-value{
+        margin-right: 2%;
+        font-size: 2vw;
+    }
